@@ -38,7 +38,8 @@ if (userInput === randomInt) {
 } else if (userInput === 3 && randomInt === 2) {
   console.log('You win!')
 } else {
-  console.log('Invalid Input Entered.')
+  console.log('\nInvalid Input Entered.\nDone.')
+  process.exit(0)
 }
 
 // Show user what the computer chose
