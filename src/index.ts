@@ -9,7 +9,13 @@
 
 import promptSync from 'prompt-sync'
 
+// Set constants
 const prompt = promptSync()
+const rock = 1
+const paper = 2
+const scissor = 3
+const min = 1
+const max = 3
 
 // Get user input
 console.log("Let's play Rock, Paper, Scissors!")
@@ -18,14 +24,7 @@ const userInputString = prompt('Enter a number 1, 2 or 3 to chose : ')
 
 const userInput = parseFloat(userInputString)
 
-// Set constants
-const rock = 1
-const paper = 2
-const scissor = 3
-
 // Gets random int
-const min = 1
-const max = 3
 const randomInt = Math.floor(Math.random() * max + min)
 
 if (userInput === randomInt) {
